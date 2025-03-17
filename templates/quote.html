@@ -10,6 +10,7 @@
             background-color: #fef2f2;
             text-align: center;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -22,6 +23,7 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 400px;
+            position: relative;
         }
         h1 {
             font-size: 24px;
@@ -57,14 +59,22 @@
             background: #d81b60;
             transform: scale(1.05);
         }
-        
-        /* BACK BUTTON STYLING */
-        .back-container {
+        .button-container {
             width: 80%;
             max-width: 400px;
             display: flex;
-            justify-content: flex-end;  /* Moves the button to the right */
+            justify-content: flex-end;
             margin-top: 10px;
+        }
+        .back-btn {
+            color: rgb(118, 118, 118);
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
         }
         .back-btn:hover {
             transform: scale(1.05);
@@ -81,8 +91,9 @@
             <button class="btn">Get New Quote ✨</button>
         </form>
     </div>
-    <!-- Back Button Positioned Below and to the Right of the White Box -->
-    <div class="back-container">
+
+    <!-- Back Button Positioned at the Bottom Right -->
+    <div class="button-container">
         <a href="/" class="back-btn">⬅ Back</a>
     </div>
 </body>
