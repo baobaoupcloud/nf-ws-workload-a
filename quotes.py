@@ -13,6 +13,11 @@ QUOTES = [
     "Embrace the journey, not just the destination. 🛤️"
 ]
 
+# Route for homepage
+@app.route('/')
+def home():
+    return render_template('home.html')  # Render homepage template
+
 # Route for displaying the UI and fetching a new quote
 @app.route('/workload-a', methods=['GET'])
 def quotes():
