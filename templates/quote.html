@@ -57,6 +57,18 @@
             background: #d81b60;
             transform: scale(1.05);
         }
+        
+        /* BACK BUTTON STYLING */
+        .back-container {
+            width: 80%;
+            max-width: 400px;
+            display: flex;
+            justify-content: flex-end;  /* Moves the button to the right */
+            margin-top: 10px;
+        }
+        .back-btn:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -68,6 +80,10 @@
         <form action="/workload-a" method="get">
             <button class="btn">Get New Quote ✨</button>
         </form>
+    </div>
+    <!-- Back Button Positioned Below and to the Right of the White Box -->
+    <div class="back-container">
+        <a href="/" class="back-btn">⬅ Back</a>
     </div>
 </body>
 </html>
